@@ -41,11 +41,17 @@ public class CharacterControlerScript : MonoBehaviour
       //START JUMP CODE
       if (isGrounded == true && Input.GetButtonDown("Jump"))
         {
-           // myRb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            myRb.AddForce(new Vector2(0, secondaryJumpForce), ForceMode2D.Force);//While the Jump Button is held
+            myRb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             StartCoroutine((SecondaryJump()));
 
         } 
+
+       if (isGrounded == false && Input.GetButtonDown("Jump"))
+        {
+            myRb.AddForce(new Vector2(0, secondaryJumpForce), ForceMode2D.Force);//While the Jump Button is held
+            
+
+        }
 
         //END JUMP CODE
     }

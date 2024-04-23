@@ -16,6 +16,10 @@ public class CharacterControlerScript : MonoBehaviour
 
     public bool isGrounded;
 
+    public float secondaryJumpForce;
+    public float secondaryJumpTime;
+    public bool secondaryJump;
+
 
 
     // Start is called before the first frame update
@@ -33,13 +37,17 @@ public class CharacterControlerScript : MonoBehaviour
             //Gets the Input value and multiplies it by acceleration
             myRb.AddForce(new Vector2(Input.GetAxis("Horizontal") * acceleration,0),ForceMode2D.Force);
         }
-
+      
+      //START JUMP CODE
       if (isGrounded == true && Input.GetButtonDown("Jump"))
         {
-            myRb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+           // myRb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            myRb.AddForce(new Vector2(0, secondaryJumpForce), ForceMode2D.Force);//While the Jump Button is held
+            StartCoroutine((SecondaryJump()));
+
         } 
 
-    
+        //END JUMP CODE
     }
     private void OnTriggerStay2D(Collider2D other)
 
@@ -50,6 +58,13 @@ public class CharacterControlerScript : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         isGrounded = true;
-    }    
+    }   
+
+    IEnumerator SecondaryJump()
+    {
+        secondaryJump = true;
+        yield return new WaitForSeconds(secondaryJumpTime);
+        secondaryJump = false;
+    } 
 
 }

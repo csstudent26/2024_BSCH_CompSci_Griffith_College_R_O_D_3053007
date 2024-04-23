@@ -10,7 +10,13 @@ public class CharacterControlerScript : MonoBehaviour
     public float acceleration;
 
     
-    private Rigidbody2D myRb;
+    public Rigidbody2D myRb;
+
+    public float jumpForce;
+
+    public bool isGrounded;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,9 +33,23 @@ public class CharacterControlerScript : MonoBehaviour
             //Gets the Input value and multiplies it by acceleration
             myRb.AddForce(new Vector2(Input.GetAxis("Horizontal") * acceleration,0),ForceMode2D.Force);
         }
-        
 
-            
-      
+      if (isGrounded == true && Input.GetButtonDown("Jump"))
+        {
+            myRb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        } 
+
+    
     }
+    private void OnTriggerStay2D(Collider2D other)
+
+     {
+        isGrounded = true;
+
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        isGrounded = true;
+    }    
+
 }

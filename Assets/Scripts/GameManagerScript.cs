@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour
-{
+{   public float health;
+
+    public float score;
     // Start is called before the first frame update
     void Start()
     {

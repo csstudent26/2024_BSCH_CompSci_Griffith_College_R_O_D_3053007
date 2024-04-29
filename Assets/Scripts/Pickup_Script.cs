@@ -6,6 +6,7 @@ public class Pickup_Script : MonoBehaviour {
 
     public float scoreValue;
     public GameManagerScript gameManager;
+    public GameObject collectedEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -18,5 +19,15 @@ public class Pickup_Script : MonoBehaviour {
     void Update()
     {
         
+    }
+
+     private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Player")) //checks if the gameobject that collided with the pickup is the player
+        {
+            gameManager.AddScore(scoreValue); //runs the AddScore method from the GameManagerScript, passing the scoreValue as an argument
+            Instantiate(collectedEffect, transform.position, transform.rotation); //creates the collectedEffect at the position and rotation of the pickup
+            Destroy(gameObject); //destroys self
+        }
     }
 }

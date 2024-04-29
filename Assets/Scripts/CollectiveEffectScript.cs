@@ -2,13 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManagerScript : MonoBehaviour
-{   public float health;
-
-    public float score;
-
-    public Transform spawnPoint;
-
+public class CollectiveEffectScript : MonoBehaviour
+{
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +16,8 @@ public class GameManagerScript : MonoBehaviour
         
     }
 
-     public void AddScore(float scoreToAdd)
+     public void DestroyEffect()
     {
-        score += scoreToAdd;
+        Destroy(gameObject);
     }
 }

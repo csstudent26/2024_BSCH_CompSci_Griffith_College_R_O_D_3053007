@@ -32,22 +32,22 @@ public class CharacterControlerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-      if(Input.GetAxis("Horizontal") > 0.1f)  {
+     // if(Input.GetAxis("Horizontal") > 0.1f)  {
 
-        anima.transform.localScale = new Vector3(1,1,1);
-      } 
+      //  anima.transform.localScale = new Vector3(1,1,1);
+     // } 
 
-      if(Input.GetAxis("Horizontal") < -0.1f)  {
+     // if(Input.GetAxis("Horizontal") < -0.1f)  {
 
-        anima.transform.localScale = new Vector3(-1,1,1);
-      }
+      //  anima.transform.localScale = new Vector3(-1,1,1);
+     // }
       
         
-      if (Mathf.Abs(Input.GetAxis("Horizontal")) * acceleration > 0.1f){
+     // if (Mathf.Abs(Input.GetAxis("Horizontal")) * acceleration > 0.1f){
 
             //Gets the Input value and multiplies it by acceleration
-            myRb.AddForce(new Vector2(Input.GetAxis("Horizontal") * acceleration,0),ForceMode2D.Force);
-        }
+      //      myRb.AddForce(new Vector2(Input.GetAxis("Horizontal") * acceleration,0),ForceMode2D.Force);
+      //  }
       
       //START JUMP CODE
       if (isGrounded == true && Input.GetButtonDown("Jump"))

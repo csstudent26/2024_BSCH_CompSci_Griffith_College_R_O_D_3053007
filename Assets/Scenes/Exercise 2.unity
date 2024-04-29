@@ -347,6 +347,7 @@ MonoBehaviour:
   secondaryJumpForce: 10
   secondaryJumpTime: 1
   secondaryJump: 0
+  anima: {fileID: 0}
 --- !u!61 &235430999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -929,7 +930,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12.824382
+  orthographic size: 15.893298
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

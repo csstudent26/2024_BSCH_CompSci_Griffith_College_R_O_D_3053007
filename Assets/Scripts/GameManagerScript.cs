@@ -13,11 +13,19 @@ public class GameManagerScript : MonoBehaviour
     void Start()
     {
         
+    } 
+
+     private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+    
+
+
         
     }
 

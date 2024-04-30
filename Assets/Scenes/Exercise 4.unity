@@ -25775,7 +25775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreValue: 1
   gameManager: {fileID: 0}
-  collectedEffect: {fileID: 0}
+  collectedEffect: {fileID: 7563173051045631314, guid: 486d730bfcfa5b64bb932a04240fcc1d, type: 3}
 --- !u!212 &1095948445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34065,6 +34065,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 645524480928427448, guid: 705272d7ef4ef7944ba72a4199d2ab1e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2085947
+      objectReference: {fileID: 0}
+    - target: {fileID: 645524480928427448, guid: 705272d7ef4ef7944ba72a4199d2ab1e, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2992828
+      objectReference: {fileID: 0}
     - target: {fileID: 1345199903335674642, guid: 705272d7ef4ef7944ba72a4199d2ab1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -34139,6 +34147,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5991696318293267141, guid: 705272d7ef4ef7944ba72a4199d2ab1e, type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814332700520487263, guid: 705272d7ef4ef7944ba72a4199d2ab1e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

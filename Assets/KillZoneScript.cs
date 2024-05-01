@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckpointScript : MonoBehaviour
+public class KillZoneScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,12 +16,11 @@ public class CheckpointScript : MonoBehaviour
         
     }
 
-     private void OnTriggerEnter2D(Collider2D col)
+     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
-            GameObject.FindGameObjectWithTag("Game Manager").GetComponent<GameManagerScript>().spawnPoint = transform;
-            gameObject.GetComponent<Animator>().SetTrigger("CheckpointTriggered");
+            col.transform.position = GameObject.FindGameObjectWithTag("Game Manager").GetComponent<GameManagerScript>().spawnPoint.position;
         }
     }
 }

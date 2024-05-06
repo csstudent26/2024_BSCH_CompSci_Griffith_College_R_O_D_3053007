@@ -1,3 +1,18 @@
 # 2024_BSCH_CompSci_Griffith_College_R_O_D_3053007
 
-'no wait: ' This Project consists of a Number of Class Exercises. Eight To be exact. In addition, it also consists of a Game I attempted to Build. The Game's main Aim was to be a Platform for Demonstrating a Knowledge of Building in the Unity Game Engine. The Last Exercise was The Game. In my case, the Game consisted of a 'Player' and an Enemy. The Goal of the Player was to reach 4 Sanctuary Areas and collect valuable Treasures For the Temple (The Largest Building in my Construction). Due to the Failure of Nav Mesh Surface, the Navigation was a major problem, and I had to rely on the conventional script for Navigation. The NavMeshSurface could not bake the Surface, although it did bake some smaller areas (by Volume). Still, I managed to employ a lot of the Material we Learned. There is in the Game the utilization of most of the areas we covered, even if it often Lacks the High Standard.
+**Project Overview:**
+
+This project consists of a series of class exercises, totaling eight in number. Additionally, it includes the development of a game aimed at demonstrating proficiency in building within the Unity Game Engine.
+
+**Game Description:**
+
+The game, designed as the final exercise, features a player and an enemy. The player's objective is to navigate through four sanctuary areas, collecting valuable treasures for the temple, the largest structure in the construction.
+
+**Challenges Faced:**
+
+Navigation posed a significant challenge due to the failure of the Nav Mesh Surface. Consequently, reliance on conventional navigation scripts became necessary. Although the NavMeshSurface failed to bake the surface entirely, it managed to cover smaller areas by volume. Despite these setbacks, I successfully incorporated a significant portion of the material covered during the course.
+
+**Conclusion:**
+
+The game showcases the utilization of various concepts covered throughout the course, albeit not always meeting the highest standards.
+

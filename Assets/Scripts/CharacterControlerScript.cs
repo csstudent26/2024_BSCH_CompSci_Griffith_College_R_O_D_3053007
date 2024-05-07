@@ -20,7 +20,7 @@ public class CharacterControlerScript : MonoBehaviour
     public float secondaryJumpTime;
     public bool secondaryJump;
 
-    public Animator anima;
+    public Animator anim;
 
 
     // Start is called before the first frame update
@@ -34,12 +34,12 @@ public class CharacterControlerScript : MonoBehaviour
     { 
      // if(Input.GetAxis("Horizontal") > 0.1f)  {
 
-      //  anima.transform.localScale = new Vector3(1,1,1);
+        anim.transform.localScale = new Vector3(1,1,1);
      // } 
 
      // if(Input.GetAxis("Horizontal") < -0.1f)  {
 
-      //  anima.transform.localScale = new Vector3(-1,1,1);
+        anim.transform.localScale = new Vector3(-1,1,1);
      // }
       
         

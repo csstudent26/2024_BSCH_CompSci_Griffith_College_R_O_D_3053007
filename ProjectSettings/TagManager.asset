@@ -8,6 +8,8 @@ TagManager:
   - Start
   - Checkpoint
   - Santuary
+  - Player2
+  - Enemy
   layers:
   - Default
   - TransparentFX

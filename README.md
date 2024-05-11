@@ -4,5 +4,10 @@ This is one of two Repositories being used for my Class_Exercises/Assignment. It
 
 The YouTube Channel containing my Exercise Videos: [https://youtu.be/Fy7dyxppkmk](https://youtu.be/Fy7dyxppkmk)
 
-This is one of two Repositories being used for my Class_Exercises/Assignment. It contains all the 8 Class_Exercises
 
+
+This is one of two Repositories being used for my Class_Exercises/Assignment. It contains all the 8 Class_Exercises. It also contains a Rough Draft of a 'Final Game' which should be Ignored.
+
+The address of the other Repository (containing the 'Final Game'): [https://github.com/csstudent26/PlayGame](https://github.com/csstudent26/PlayGame)
+
+The YouTube Channel containing my Exercise Videos: [https://youtu.be/Fy7dyxppkmk](https://youtu.be/Fy7dyxppkmk)

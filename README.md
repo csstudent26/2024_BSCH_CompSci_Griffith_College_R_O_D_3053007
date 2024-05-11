@@ -4,4 +4,5 @@ This is one of two Repositories being used for my Class_Exercises/Assignment. It
 
 The YouTube Channel containing my Exercise Videos: [https://youtu.be/Fy7dyxppkmk](https://youtu.be/Fy7dyxppkmk)
 
+This is one of two Repositories being used for my Class_Exercises/Assignment. It contains all the 8 Class_Exercises
 
